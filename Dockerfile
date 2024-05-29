@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your pre-compiled C binary into the container
-COPY AKG /app/
+COPY AKG/app/
 
 # Make the binary executable
 RUN chmod +x /app/bgmi
